@@ -4,13 +4,10 @@ Spyder Editor
 
 This is a temporary script file.
 """
-
+#type "number = 1" before running code
 import os
 import pyscreenshot
 
-path = 'pictures/'
-os.chdir(path)
-os.listdir()
 
 a = [1360, 0, 3300, 1100]
 pic = pyscreenshot.grab(a)
@@ -18,37 +15,25 @@ pic.show()
 
 base = '000'
 
-#for number in range(20):#number = 1
-def exists(var):
-     return var in globals()
+#number = 1
 
- 
-firstRunCheck = exists("number")
-
-print(firstRunCheck)
-
-if firstRunCheck:
-    number += 1
-else:
-    number = 0
+with open('ini.txt', 'r') as f:
+     strNum = f.read()
 
 
-print(number)
-
-print(number)
-
+#strNum = str(number)
+#print(number)   
     
-strNum = str(number)
-t = len(strNum)
+#strNum = str(1)
+base = ''.join([base[:-1], strNum])
 
-#listBase[-1] = str(number)
-base = ''.join([base[:-t], strNum])
+number =  int(strNum) + 1
+strNum = str(number )
+with open('ini.txt', 'w') as f:
+    f.write(strNum)
 
 print(base)
 
-path = '/home/stefanovjc80/Documents/pdfTutorial_builder/pictures/' + 'picture_01.png'
-#path = 'pictures/picture_01.png' #+ str(number)
-
-
+path = 'pictures/' + 'picture_' + base + '.png'
 
 pic.save(path)
