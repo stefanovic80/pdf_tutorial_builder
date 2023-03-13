@@ -34,7 +34,7 @@ else:
 
 
 print(number)
-"""
+
 print(number)
 
     
@@ -46,7 +46,9 @@ base = ''.join([base[:-t], strNum])
 
 print(base)
 
-name = 'picture_' #+ str(number)
+path = '/home/stefanovjc80/Documents/pdfTutorial_builder/pictures/' + 'picture_01.png'
+#path = 'pictures/picture_01.png' #+ str(number)
 
-pic.save(name + ".png")
-"""
+
+
+pic.save(path)
