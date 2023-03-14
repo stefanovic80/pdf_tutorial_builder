@@ -4,36 +4,28 @@ Spyder Editor
 
 This is a temporary script file.
 """
-#type "number = 1" before running code
+#set "1" as content of ini.txt file
 import os
 import pyscreenshot
 
 
-a = [1360, 0, 3300, 1100]
-pic = pyscreenshot.grab(a)
-pic.show()
+path = 'pictures/' 
+number = len( os.listdir(path) )#number of pictures
+strNum = str(number) #number of pictures in string format
 
-base = '000'
+a = [1360, 0, 3300, 1100] # size of the screenshot window
+pic = pyscreenshot.grab(a) #grab a screenshot
+#pic.show() #show a screenshot if "#" removed
 
-#number = 1
+base = '000' #name and number of the screenshot file
 
-with open('ini.txt', 'r') as f:
-     strNum = f.read()
+t = len(strNum) 
+base = ''.join([base[:-t], strNum]) #name and number of the screenshot file
 
-
-#strNum = str(number)
-#print(number)   
-    
-#strNum = str(1)
-base = ''.join([base[:-1], strNum])
-
-number =  int(strNum) + 1
+number =  int(strNum) + 1 # increase number of the screenshot file
 strNum = str(number )
-with open('ini.txt', 'w') as f:
-    f.write(strNum)
 
 print(base)
 
-path = 'pictures/' + 'picture_' + base + '.png'
-
-pic.save(path)
+Path = path + 'picture_' + base + '.png'
+pic.save(Path)
