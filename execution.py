@@ -7,6 +7,7 @@ This is a temporary script file.
 #set "1" as content of ini.txt file
 import os
 import pyscreenshot
+import time
 
 
 path = 'pictures/' 
@@ -14,6 +15,9 @@ number = len( os.listdir(path) )#number of pictures
 strNum = str(number) #number of pictures in string format
 
 a = [1360, 0, 3300, 1100] # size of the screenshot window
+time.sleep(2)
+print('go!')
+time.sleep(1)
 pic = pyscreenshot.grab(a) #grab a screenshot
 #pic.show() #show a screenshot if "#" removed
 
@@ -35,7 +39,9 @@ fileName = "latexScriptsToIncude_images/picture_" + base + ".tex"
 f = open(fileName, "w")
 
 text1 = '\\begin{figure}[h!]\t\t\n\t\\centering\n   \t\\includegraphics[width=8.0in]{pictures/picture_'
-text3 = '.png}\n  \t\\caption{Software}\n   \t\\label{fig:graficoST_unAcce}\n\\end{figure}'
+caption = 'LibreOffice Calc'
+label = 'fig:LibreOfficeCalc' + base
+text3 = '.png}\n  \t\\caption{' + caption + '}\n   \t\\label{' + label + '}\n\\end{figure}'
 
 totalText = text1 + base + text3
 
