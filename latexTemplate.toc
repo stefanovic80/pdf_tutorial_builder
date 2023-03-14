@@ -1,0 +1,8 @@
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\contentsline {section}{\numberline {1}Rappresentazione grafica di una retta su piano cartesiano con \emph {foglio di calcolo elettronico} }{3}{section.1}%
+\contentsline {section}{\numberline {2}Scrittura nelle caselle di testo, numeri e formule matematiche}{4}{section.2}%
+\contentsline {section}{\numberline {3}Copiatura delle formule matematiche su più caselle della medesima colonna}{7}{section.3}%
+\contentsline {section}{\numberline {4}Eseguire il grafico}{11}{section.4}%
+\contentsline {section}{\numberline {5}Impostazione dei parametri del grafico}{14}{section.5}%
+\contentsline {section}{\numberline {6}Cambiare il font dei numeri sugli assi}{17}{section.6}%

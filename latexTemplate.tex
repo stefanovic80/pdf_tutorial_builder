@@ -87,11 +87,16 @@ $\dots$ & $\dots$	& $\dots$\\
 \end{center}
 
 
-essendo \emph{infiniti} i differenti valori che posso attribuire a $x$, infinite sono anche i possibili valori di $y$. Quindi, data una equazione lineare in due incognite, {\bf infinite sono le coppie ordinate di valori $x$ e $y$ che la soddisfano}.
+%essendo \emph{infiniti} i differenti valori che posso attribuire a $x$, infiniti sono anche i possibili valori di $y$. 
 
-Abbiamo anche visto, adoperando la carta millimetrata, che le infinite coppie ordinate che risolvono una equazione lineare come la eq. \ref{eq:eqLineare} \emph{giacciono tutte e solo} su una ben precisa retta. %Si dice, a tal proposito, di \emph{equazione della retta}.
+Abbiamo anche visto, adoperando la carta millimetrata, che le infinite coppie ordinate che risolvono una equazione lineare come la eq. \ref{eq:eqLineare} \emph{giacciono tutte e solo} su una ben precisa retta (fig. \ref{fig:LibreOfficeCalc000}). %Si dice, a tal proposito, di \emph{equazione della retta}.
 
+\input{latexScriptsToIncude_images/picture_000.tex}
+
+%Inoltre, essendo infiniti i valori che posso scegliere per $x$, infiniti sono anche i valori che posso calcolare per $y$. Quindi, una equazione lineare come la eq. \ref{eq:eqLineare} ammette \emph{infinite soluzioni}.
 Sempre adoperando la carta millimetrata, abbiamo visto che mettendo a sistema due differenti equazioni lineari, la coppia ordinata risultato del sistema è, graficamente, il punto di intersezione delle rispettive rette. In questa sede andiamo a rivedere tutto questo facendo uso del \emph{foglio di calcolo elettronico} e, in particolare, di LibreOffice Calc.
+
+\newpage
 
 \section{Rappresentazione grafica di una retta su piano cartesiano con \emph{foglio di calcolo elettronico} }
 
@@ -103,12 +108,12 @@ Sempre adoperando la carta millimetrata, abbiamo visto che mettendo a sistema du
 %usiamo il foglio di calcolo elettronico e, in particolare, \emph{LibreOffice Calc}, per calcolare il valore delle coppie ordinate che soddisfano una equazione
 
 %sono infinite
-Prendiamo in considerazione il sistema due equazioni lineari e due incognite di pag 494 n 114 che riportiamo anche qui di seguito per comodità:
+Prendiamo in considerazione il sistema due equazioni lineari e due incognite:
 
 \begin{equation}\label{eq:sistema}
   	\begin{cases}
-		\frac{x}{3} - \frac{3}{2}y = 2\\
-		9y - 7x - 3 = 0		
+		9y - 2x + 12 = 0\\
+		9y + 7x + 3 = 0		
 	\end{cases}
 \end{equation}
 
@@ -117,7 +122,7 @@ Facendo uso di LibreOffice Calc, per ciascuna delle equazioni di questo sistema,
 Per fare ciò, conviene che per ciascuna delle due equazioni del sistema \ref{eq:sistema}, esplicitiamo la $y$ in funzione della $x$
 
 
-\begin{equation}\nonumber
+\begin{equation}\label{eq:sistemaEspl}
   	\begin{cases}
 		y = \frac{2}{9}x - \frac{4}{3}\\
 		y = -\frac{7}{9}x - \frac{1}{3}
@@ -126,18 +131,124 @@ Per fare ciò, conviene che per ciascuna delle due equazioni del sistema \ref{eq
 
 
 Passiamo ora a LibreOffice Calc (fig. \ref{fig:LibreOfficeCalc000})
-\input{latexScriptsToIncude_images/picture_000.tex}
+\input{latexScriptsToIncude_images/picture_003.tex}
 
-e iniziamo a riempire la colonna dei valori di $x$, che useremo sia per calcolare i valori di $y$ della prima equazione ($y1$), sia per calcolare i valori di $y$ della seconda equazione ($y2$).
+\newpage
+
+\section{Scrittura nelle caselle di testo, numeri e formule matematiche}
+
+Usiamo la colonna A i valori delle $x$ che andiamo a scegliere, la colonna B per i valori di $y$ della prima equazione ($y1$), e la colonna C per i valori di $y2$ della seconda equazione ($y2$). Per ciascuna colonna, la prima riga la usiamo per dare un "titolo alla colonna stessa.
+
+Usiamo la seconda colonna per il primo valore di $x$, che fissiamo pari a $-10$, il primo valore di $y1$ e il primo valore di $y2$, che invece devono essere calcolati a partire dal sistema \ref{eq:sistema}; come in figura \ref{fig:LibreOfficeCalc004}
+
+\input{latexScriptsToIncude_images/picture_004.tex}
 
 
-%Dobbiamo simulare la carta millimetrata, quindi consideriamo un intervallo delle x che vada da $-10$ a $+10$.
+Per calcolare il valore di $y1$ nella casella $B2$ dobbiamo inizializzare la casella con il carattere "=" e, successivamente, mettere l'espressione matematica a secondo membro della prima equazione del sistema \ref{eq:sistemaEspl}.
 
-Anzichè partire dal valore $x = 0$, partiamo dal valore $x = -10$. Inoltre, Adoperiamo la \emph{colonna A} per scrivere i diversi valori di $x$ e, di questa, adoperiamo la riga 1 come \emph{indice di colonna} (fig. \ref{fig:LibreOfficeCalc001}.
+\input{latexScriptsToIncude_images/picture_005.tex}
+
+Allo stesso modo, nella casella $C2$ immattiamo il secondo membro della seconda equazione del sistema \ref{eq:sistemaEspl}
+
+\input{latexScriptsToIncude_images/picture_006.tex}
+
+Il risultato che dovrebbe apparire è riportato nella figura \ref{fig:LibreOfficeCalc007}
 
 
-\input{latexScriptsToIncude_images/picture_001.tex}
+\input{latexScriptsToIncude_images/picture_007.tex}
 
+\newpage
+\section{Copiatura delle formule matematiche su più caselle della medesima colonna}
+
+Scriviamo ora l'espressione algebrica "$=a2 + 0,01$" nella casella A3
+
+\input{latexScriptsToIncude_images/picture_008.tex}
+
+Poi selezioniamo le caselle $B2$ e $C2$ (figura \ref{fig:LibreOfficeCalc009}). Cliccando sul quadratino in basso a destra e tenendo premuto fino a scorrere alle due caselle di sotto, dovremmo ottenere il risultato della figura \ref{fig:LibreOfficeCalc010}. E cioè le formule matematiche scritte in $B2$ e in $C2$ in funzione della variabile $x$ presente nella casella $A2$ adesso sono state copiate in $B3$ e $C3$ rispettivamente e entrambe sono in funzione della variabile $x$ presente nella cadella $A3$.
+
+\input{latexScriptsToIncude_images/picture_009.tex}
+
+
+\input{latexScriptsToIncude_images/picture_010.tex}
+
+
+Selezioniamo ora le caselle $A3$, $B3$ e $C3$, come in figura \ref{fig:LibreOfficeCalc011}
+
+\input{latexScriptsToIncude_images/picture_011.tex}
+
+E ripetiamo il passaggio precedente, copiando le rispettive formule matematiche per un numero di righe sufficientemente grande da arrivare fino a $x = 10$ (figura \ref{fig:LibreOfficeCalc012})
+
+\input{latexScriptsToIncude_images/picture_012.tex}
+
+
+In questo modo LibreOffice Calc ha eseguito ben 200 calcoli, e con estrema rapidità.
+
+\newpage
+
+\section{Eseguire il grafico}
+
+
+Eseguire i seguenti step per riportare le rette associate alle due equazioni del sistema in un unico grafico:
+
+\begin{enumerate}
+	\item tornare in alto sul foglio elettronico e selezionare le tre colonne $A$, $B$ e $C$, come in figura 
+	
+	\input{latexScriptsToIncude_images/picture_013.tex}
+	
+	\item Nel menù in alto selezionare "insert -> chart", figura \ref{fig:LibreOfficeCalc014}. Attendere un po' se il computer non è molto prestante.
+	
+	\input{latexScriptsToIncude_images/picture_014.tex}
+	\item Selezionare "XY (Scatter)" nella finestra che si apre e, successivamente, "Lines Only" nel riquadro a fianco, e infine premere su "finish".
+	
+	\input{latexScriptsToIncude_images/picture_015.tex}
+
+	
+	\item Il grafico della figura \ref{fig:LibreOfficeCalc016} dovrebbe apparire
+
+	\input{latexScriptsToIncude_images/picture_016.tex}
+\end{enumerate}
+Il punto di intersezione delle due rette dovrebbe avere, appunto, come coordinate la risoluzione del sistema eq. \ref{eq:sistema} o, parimenti, del sistema \ref{eq:sistemaEspl}. Il problema, però, è che questo grafico \emph{non} ha una griglia abbastanza fitta e l'analisi, fino a questo punto, può essere fatta solo in linea di massima. Possiamo allargare il grafico andando a cliccare sui quadratini agli angoli del riquadro che lo delimita (figura \ref{fig:LibreOfficeCalc017}
+
+
+\input{latexScriptsToIncude_images/picture_017.tex}
+
+Andiamo a vedere come si possono impostare i parametri del grafico, in modo da accertarci che il punto di intersezione sia effettivamente quello cercato.
+
+\newpage
+
+\section{Impostazione dei parametri del grafico}
+
+In primo luogo notiamo che i valori delle $x$ vanno da $-15$ a $+15$, mentre a noi basta che vadano da $-10$ a $+10$. Nella figura \ref{fig:LibreOfficeCalc017} facciamo doppio click su uno dei numeri dell'asse delle $x$, ad esempio il numero $-5$ e si apre la finestra di figura \ref{fig:LibreOfficeCalc018}
+
+\input{latexScriptsToIncude_images/picture_018.tex}
+
+
+Leviamo la spunta su "automatic" su tutte e quattro le voci, cambiamo "Minimum" e "Maximum" in $-10$ e $+10$, cambiamo anche "Major interval" e "Minor interval count" in modo da impostare una griglia più vicina a quella di una carta millimetrata, come in figura \ref{fig:LibreOfficeCalc019}
+
+
+\input{latexScriptsToIncude_images/picture_019.tex}
+
+
+E il risultato dovrebbe essere quello di figura \ref{fig:LibreOfficeCalc020}
+
+\input{latexScriptsToIncude_images/picture_020.tex}
+
+Allo stesso modo, cliccando su un numero dell'asse delle $y$, ad esempio il numero $2$, si possono configurare i valori massimo e minimo di $y$, nonchè i valori della griglia
+
+\ref{fig:LibreOfficeCalc021}
+
+
+\input{latexScriptsToIncude_images/picture_021.tex}
+
+\newpage
+\section{Cambiare il font dei numeri sugli assi}
+
+Nella figura \ref{fig:LibreOfficeCalc022} risulta che bisogna cliccare prima su font e poi scegliere il valore desiderato.
+\input{latexScriptsToIncude_images/picture_022.tex}
+
+nella figura \ref{fig:LibreOfficeCalc023} il risultato, dopo aver impostato un font pari a 16 \emph{sia} per i numeri dell'asse delle $x$, sia per i numeri dell'asse delle $y$
+
+\input{latexScriptsToIncude_images/picture_023.tex}
 
 
 \end{document}
