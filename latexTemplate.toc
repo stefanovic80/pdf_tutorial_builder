@@ -6,3 +6,6 @@
 \contentsline {section}{\numberline {4}Eseguire il grafico}{11}{section.4}%
 \contentsline {section}{\numberline {5}Impostazione dei parametri del grafico}{14}{section.5}%
 \contentsline {section}{\numberline {6}Cambiare il font dei numeri sugli assi}{17}{section.6}%
+\contentsline {section}{\numberline {7}Inserire una griglia più fitta}{17}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Infittire la griglia verticale}{20}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Infittire la griglia orizzontale}{21}{subsection.7.2}%
