@@ -29,3 +29,16 @@ print(base)
 
 Path = path + 'picture_' + base + '.png'
 pic.save(Path)
+
+fileName = "latexScriptsToIncude_images/picture_" + base + ".tex"
+
+f = open(fileName, "w")
+
+text1 = '\\begin{figure}[h!]\t\t\n\t\\centering\n   \t\\includegraphics[width=8.0in]{pictures/picture_'
+text3 = '.png}\n  \t\\caption{Software}\n   \t\\label{fig:graficoST_unAcce}\n\\end{figure}'
+
+totalText = text1 + base + text3
+
+u = f.write(totalText)
+
+f.close()
