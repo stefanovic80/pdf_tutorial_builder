@@ -27,7 +27,7 @@
  \geometry{
  a4paper,
  total={170mm,264mm},
- left=2mm,
+ left=16mm,
  top=10mm,
  }
 
@@ -36,7 +36,7 @@
 \newcommand{\pict}[1]{
 \begin{figure}[h!]		
 	\centering
-   	\includegraphics[width=8.0in]{pictures/picture_#1.png}
+   	\includegraphics[width=7.0in]{pictures/picture_#1.png}
   	\caption{#1}
    	\label{fig:LibreOfficeCalc#1}
 \end{figure}
@@ -136,25 +136,57 @@ Per fare ciò, conviene che per ciascuna delle due equazioni del sistema \ref{eq
 Passiamo ora a LibreOffice Calc (fig. \ref{fig:LibreOfficeCalc003})
 %\input{latexScriptsToIncude_images/picture_003.tex}
 
-\pict{003}
+
 
 \newpage
 
+
+
 \section{Scrittura nelle caselle di testo, numeri e formule matematiche}
 
-Con riferimento alla figura \ref{fig:LibreOfficeCalc003}, usiamo la colonna A per i valori delle $x$ che andiamo a scegliere, la colonna B per i valori di $y$ della prima equazione (che chiamiamo $y1$), e la colonna C per i valori $y$ della seconda equazione (che chiamiamo $y2$). Per ciascuna colonna, la prima riga la usiamo come "titolo" alla colonna stessa; come in figura \ref{fig:LibreOfficeCalc004}.
+Con riferimento alla figura \ref{fig:LibreOfficeCalc003}, andiamo ad usare le colonne A, B e C. 
 
-Nella seconda riga, mettiamo $-10$  come primo valore di $x$ \footnote{Selezionare la casella A2 con il mouse, scrivere "-10" e premere \emph{invio}. }, il primo valore di $y1$ e il primo valore di $y2$, che invece devono essere calcolati a partire dal sistema di equazione \ref{eq:sistema}; come in figura \ref{fig:LibreOfficeCalc004}
+\pict{003}
 
-%\input{latexScriptsToIncude_images/picture_004.tex}
+La {\bf prima riga } di tutte e tre le colonne la usiamo come "titolo" alla colonna stessa; come in figura \ref{fig:LibreOfficeCalc004}. In particolare
+
+\begin{itemize}
+	\item la {\bf colonna A} per i valori delle {\bf x} che andiamo a scegliere \footnote{Selezionare la casella A1 con il mouse, scrivere "x" e premere \emph{invio}. }
+	\item la {\bf colonna B} per i valori di $y$ calcolati da x con la prima equazione del sistema numero \ref{eq:sistemaEspl} (che chiamiamo {\bf y1})
+	\item la {\bf colonna C} per i valori $y$ calcolati da x con la seconda equazione del sistema numero \ref{eq:sistemaEspl} (che chiamiamo {\bf y2})
+\end{itemize}
+
+\vspace{1cm}
+
+Nella {\bf Seconda riga} 
+
+\begin{itemize}
+	\item $-10$ in A2  come primo valore di $x$.
+	\item Nella casella B2 va messa la prima equazione del sistema \ref{eq:sistemaEspl}.
+	\item Nella casella C2 va messa la seconda equazione del sistema \ref{eq:sistemaEspl}.
+\end{itemize}
+
+ 
+
+
+
+Iniziamo con la casella B2. Per istruire il software che in questa casella ci va una espressione algebrica da calcolare, e non semplicemente del testo, va inizializzata con il carattere "=", al quale segue l'espressione $\frac{2x}{9} - \frac{4}{3}$ (figura \ref{fig:LibreOfficeCalc005}).
+%Nella casella B2 poniamo  il valore y1 calcolato in funzione del contenuto della casella A2 
+
+%La prima equazione di \ref{eq:sistemaEspl} viene quindi inserita nella casella B2 (figura \ref{fig:LibreOfficeCalc005}).
+
+Allo stesso modo, nella casella C2 mettiamo l'espressione algebrica corrispondente a $-\frac{7x}{9} - \frac{1}{3}$ (figura \ref{fig:LibreOfficeCalc006})
+
+
+
 \pict{004}
 
-Per calcolare il valore di $y1$ nella casella $B2$ dobbiamo inizializzare la casella con il carattere "=" e, successivamente, mettere l'espressione matematica a secondo membro della prima equazione del sistema \ref{eq:sistemaEspl}.
+
 
 %\input{latexScriptsToIncude_images/picture_005.tex}
 \pict{005}
 
-Allo stesso modo, nella casella $C2$ immattiamo il secondo membro della seconda equazione del sistema \ref{eq:sistemaEspl}
+%Allo stesso modo, nella casella $C2$ immattiamo il secondo membro della seconda equazione del sistema \ref{eq:eqLineare}ref{eq:sistemaEspl}
 
 %\input{latexScriptsToIncude_images/picture_006.tex}
 \pict{006}
@@ -168,6 +200,11 @@ Il risultato che dovrebbe apparire è riportato nella figura \ref{fig:LibreOffic
 
 
 \newpage
+\mbox{}
+\newpage
+\mbox{}
+\newpage
+
 \section{Copiatura delle formule matematiche su più caselle della medesima colonna}
 
 Scriviamo ora l'espressione algebrica "$=a2 + 0,01$" nella casella A3
@@ -178,7 +215,7 @@ Scriviamo ora l'espressione algebrica "$=a2 + 0,01$" nella casella A3
 
 Poi selezioniamo le caselle $B2$ e $C2$ (figura \ref{fig:LibreOfficeCalc009}). Cliccando sul quadratino in basso a destra e tenendo premuto fino a scorrere alle due caselle di sotto, dovremmo ottenere il risultato della figura \ref{fig:LibreOfficeCalc010}.
 
-Con questo passaggio, le formule matematiche scritte in $B2$ e in $C2$ in funzione della variabile $x$ (figura \ref{fig:LibreOfficeCalc009}) presente nella casella $A2$ adesso sono state copiate in $B3$ e $C3$ rispettivamente e entrambe sono in funzione della variabile $x$ presente nella casella $A3$.
+Con questo passaggio, le formule matematiche scritte in $B2$ e in $C2$ in funzione della variabile $x$ (figura \ref{fig:LibreOfficeCalc009}) vengono copiate in $B3$ e $C3$ rispettivamente $A3$.
 
 %\input{latexScriptsToIncude_images/picture_009.tex}
 \pict{009}
@@ -191,13 +228,18 @@ Selezioniamo ora le caselle $A3$, $B3$ e $C3$, come in figura \ref{fig:LibreOffi
 %\input{latexScriptsToIncude_images/picture_011.tex}
 \pict{011}
 
-E ripetiamo il passaggio precedente, copiando le rispettive formule matematiche per un numero di righe sufficientemente grande da arrivare fino a $x = 10$ (figura \ref{fig:LibreOfficeCalc012})
+e ripetiamo il passaggio precedente, copiando le rispettive formule matematiche, non su una riga soltanto, ma per un numero di righe sufficientemente grande da arrivare fino a $x = 10$ (figura \ref{fig:LibreOfficeCalc012}).
 
 %\input{latexScriptsToIncude_images/picture_012.tex}
 \pict{012}
 
 In questo modo LibreOffice Calc ha eseguito ben 200 calcoli, e con estrema rapidità.
 
+\newpage
+\mbox{}
+\newpage
+
+\mbox{}
 \newpage
 
 \section{Eseguire il grafico}
@@ -237,7 +279,8 @@ Il punto di intersezione delle due rette dovrebbe avere, appunto, come coordinat
 Andiamo a vedere come si possono impostare i parametri del grafico, in modo da accertarci che il punto di intersezione sia effettivamente quello cercato.
 
 \newpage
-
+%\mbox{}
+%\newpage
 \section{Impostazione dei parametri del grafico}
 
 In primo luogo notiamo che i valori delle $x$ vanno da $-15$ a $+15$, mentre a noi basta che vadano da $-10$ a $+10$. Nella figura \ref{fig:LibreOfficeCalc017} facciamo doppio click su uno dei numeri dell'asse delle $x$, ad esempio il numero $-5$ e si apre la finestra di figura \ref{fig:LibreOfficeCalc018}
@@ -266,6 +309,9 @@ Allo stesso modo, cliccando su un numero dell'asse delle $y$, ad esempio il nume
 
 
 \newpage
+\mbox{}
+\newpage
+
 \section{Cambiare il font dei numeri sugli assi}
 
 Nella figura \ref{fig:LibreOfficeCalc022} risulta che bisogna cliccare prima su font e poi scegliere il valore desiderato.
@@ -277,6 +323,11 @@ nella figura \ref{fig:LibreOfficeCalc023} il risultato, dopo aver impostato un f
 
 %\input{latexScriptsToIncude_images/picture_023.tex}
 \pict{023}
+
+
+%\newpage
+%\mbox{}
+\newpage
 
 \section{Inserire una griglia più fitta}
 
@@ -301,7 +352,8 @@ nella figura \ref{fig:LibreOfficeCalc023} il risultato, dopo aver impostato un f
 
 
 \newpage
-~\newpage
+\mbox{}
+\newpage
 
 \section{Infittire la griglia verticale}
 
@@ -309,6 +361,9 @@ nella figura \ref{fig:LibreOfficeCalc023} il risultato, dopo aver impostato un f
 
 %\input{latexScriptsToIncude_images/picture_028.tex}
 \pict{028}
+
+\newpage
+
 
 \section{Infittire la griglia orizzontale}
 
