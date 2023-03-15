@@ -18,14 +18,6 @@
 \usepackage[utf8]{inputenc}
 \usepackage[italian]{babel}
 
-%\usepackage{hyperref}
-
-
-%\usepackage{imakeidx}%
-%\makeindex[program=xindy]%, options=-C utf8 -L portuguese]%
-%\usepackage{makeidx}
-%\makeindex
-
 \usepackage{imakeidx}
 \usepackage{hyperref}
 \makeindex
@@ -39,12 +31,20 @@
  top=10mm,
  }
 
+
+
+\newcommand{\pict}[1]{
+\begin{figure}[h!]		
+	\centering
+   	\includegraphics[width=8.0in]{pictures/picture_#1.png}
+  	\caption{#1}
+   	\label{fig:LibreOfficeCalc#1}
+\end{figure}
+}
+
+
+
 \begin{document}
-
-%\backmatter
-%text\index{test}
-%\printindex
-
 
 \begin{flushright}
 {\bf \today}
@@ -89,11 +89,14 @@ $\dots$ & $\dots$	& $\dots$\\
 
 %essendo \emph{infiniti} i differenti valori che posso attribuire a $x$, infiniti sono anche i possibili valori di $y$. 
 
-Abbiamo anche visto, adoperando la carta millimetrata, che le infinite coppie ordinate che risolvono una equazione lineare come la eq. \ref{eq:eqLineare} \emph{giacciono tutte e solo} su una ben precisa retta (fig. \ref{fig:LibreOfficeCalc000}). %Si dice, a tal proposito, di \emph{equazione della retta}.
+Abbiamo anche visto, adoperando la carta millimetrata, che le infinite coppie ordinate che risolvono una equazione lineare come la eq. \ref{eq:eqLineare} \emph{giacciono tutte e solo} su una ben precisa retta (fig. \ref{fig:LibreOfficeCalc000}). 
 
-\input{latexScriptsToIncude_images/picture_000.tex}
 
-%Inoltre, essendo infiniti i valori che posso scegliere per $x$, infiniti sono anche i valori che posso calcolare per $y$. Quindi, una equazione lineare come la eq. \ref{eq:eqLineare} ammette \emph{infinite soluzioni}.
+
+\pict{000}
+
+% Le coppie ordinate della tabella precedente, soddisfano l'equazione lineare $9y -7x - 3 = 0$ e quindi corrispondono a punti sul piano cartesiano che stanno tutti su una stessa retta.
+
 Sempre adoperando la carta millimetrata, abbiamo visto che mettendo a sistema due differenti equazioni lineari, la coppia ordinata risultato del sistema è, graficamente, il punto di intersezione delle rispettive rette. In questa sede andiamo a rivedere tutto questo facendo uso del \emph{foglio di calcolo elettronico} e, in particolare, di LibreOffice Calc.
 
 \newpage
@@ -131,7 +134,9 @@ Per fare ciò, conviene che per ciascuna delle due equazioni del sistema \ref{eq
 
 
 Passiamo ora a LibreOffice Calc (fig. \ref{fig:LibreOfficeCalc000})
-\input{latexScriptsToIncude_images/picture_003.tex}
+%\input{latexScriptsToIncude_images/picture_003.tex}
+
+\pict{003}
 
 \newpage
 
@@ -141,45 +146,53 @@ Usiamo la colonna A i valori delle $x$ che andiamo a scegliere, la colonna B per
 
 Usiamo la seconda colonna per il primo valore di $x$, che fissiamo pari a $-10$, il primo valore di $y1$ e il primo valore di $y2$, che invece devono essere calcolati a partire dal sistema \ref{eq:sistema}; come in figura \ref{fig:LibreOfficeCalc004}
 
-\input{latexScriptsToIncude_images/picture_004.tex}
-
+%\input{latexScriptsToIncude_images/picture_004.tex}
+\pict{004}
 
 Per calcolare il valore di $y1$ nella casella $B2$ dobbiamo inizializzare la casella con il carattere "=" e, successivamente, mettere l'espressione matematica a secondo membro della prima equazione del sistema \ref{eq:sistemaEspl}.
 
-\input{latexScriptsToIncude_images/picture_005.tex}
+%\input{latexScriptsToIncude_images/picture_005.tex}
+\pict{005}
 
 Allo stesso modo, nella casella $C2$ immattiamo il secondo membro della seconda equazione del sistema \ref{eq:sistemaEspl}
 
-\input{latexScriptsToIncude_images/picture_006.tex}
+%\input{latexScriptsToIncude_images/picture_006.tex}
+\pict{006}
+
 
 Il risultato che dovrebbe apparire è riportato nella figura \ref{fig:LibreOfficeCalc007}
 
 
-\input{latexScriptsToIncude_images/picture_007.tex}
+%\input{latexScriptsToIncude_images/picture_007.tex}
+\pict{007}
+
 
 \newpage
 \section{Copiatura delle formule matematiche su più caselle della medesima colonna}
 
 Scriviamo ora l'espressione algebrica "$=a2 + 0,01$" nella casella A3
 
-\input{latexScriptsToIncude_images/picture_008.tex}
+%\input{latexScriptsToIncude_images/picture_008.tex}
+\pict{008}
+
 
 Poi selezioniamo le caselle $B2$ e $C2$ (figura \ref{fig:LibreOfficeCalc009}). Cliccando sul quadratino in basso a destra e tenendo premuto fino a scorrere alle due caselle di sotto, dovremmo ottenere il risultato della figura \ref{fig:LibreOfficeCalc010}. E cioè le formule matematiche scritte in $B2$ e in $C2$ in funzione della variabile $x$ presente nella casella $A2$ adesso sono state copiate in $B3$ e $C3$ rispettivamente e entrambe sono in funzione della variabile $x$ presente nella cadella $A3$.
 
-\input{latexScriptsToIncude_images/picture_009.tex}
+%\input{latexScriptsToIncude_images/picture_009.tex}
+\pict{009}
 
-
-\input{latexScriptsToIncude_images/picture_010.tex}
-
+%\input{latexScriptsToIncude_images/picture_010.tex}
+\pict{010}
 
 Selezioniamo ora le caselle $A3$, $B3$ e $C3$, come in figura \ref{fig:LibreOfficeCalc011}
 
-\input{latexScriptsToIncude_images/picture_011.tex}
+%\input{latexScriptsToIncude_images/picture_011.tex}
+\pict{011}
 
 E ripetiamo il passaggio precedente, copiando le rispettive formule matematiche per un numero di righe sufficientemente grande da arrivare fino a $x = 10$ (figura \ref{fig:LibreOfficeCalc012})
 
-\input{latexScriptsToIncude_images/picture_012.tex}
-
+%\input{latexScriptsToIncude_images/picture_012.tex}
+\pict{012}
 
 In questo modo LibreOffice Calc ha eseguito ben 200 calcoli, e con estrema rapidità.
 
@@ -193,24 +206,31 @@ Eseguire i seguenti step per riportare le rette associate alle due equazioni del
 \begin{enumerate}
 	\item tornare in alto sul foglio elettronico e selezionare le tre colonne $A$, $B$ e $C$, come in figura 
 	
-	\input{latexScriptsToIncude_images/picture_013.tex}
-	
+	%\input{latexScriptsToIncude_images/picture_013.tex}
+	\pict{013}	
+		
 	\item Nel menù in alto selezionare "insert -> chart", figura \ref{fig:LibreOfficeCalc014}. Attendere un po' se il computer non è molto prestante.
 	
-	\input{latexScriptsToIncude_images/picture_014.tex}
+	%\input{latexScriptsToIncude_images/picture_014.tex}
+	\pict{014}	
+	
 	\item Selezionare "XY (Scatter)" nella finestra che si apre e, successivamente, "Lines Only" nel riquadro a fianco, e infine premere su "finish".
 	
-	\input{latexScriptsToIncude_images/picture_015.tex}
-
+	%\input{latexScriptsToIncude_images/picture_015.tex}
+	\pict{015}
 	
 	\item Il grafico della figura \ref{fig:LibreOfficeCalc016} dovrebbe apparire
 
-	\input{latexScriptsToIncude_images/picture_016.tex}
+	%\input{latexScriptsToIncude_images/picture_016.tex}
+	\pict{016}
+
 \end{enumerate}
 Il punto di intersezione delle due rette dovrebbe avere, appunto, come coordinate la risoluzione del sistema eq. \ref{eq:sistema} o, parimenti, del sistema \ref{eq:sistemaEspl}. Il problema, però, è che questo grafico \emph{non} ha una griglia abbastanza fitta e l'analisi, fino a questo punto, può essere fatta solo in linea di massima. Possiamo allargare il grafico andando a cliccare sui quadratini agli angoli del riquadro che lo delimita (figura \ref{fig:LibreOfficeCalc017}
 
 
-\input{latexScriptsToIncude_images/picture_017.tex}
+%\input{latexScriptsToIncude_images/picture_017.tex}
+\pict{017}
+
 
 Andiamo a vedere come si possono impostare i parametri del grafico, in modo da accertarci che il punto di intersezione sia effettivamente quello cercato.
 
@@ -220,56 +240,81 @@ Andiamo a vedere come si possono impostare i parametri del grafico, in modo da a
 
 In primo luogo notiamo che i valori delle $x$ vanno da $-15$ a $+15$, mentre a noi basta che vadano da $-10$ a $+10$. Nella figura \ref{fig:LibreOfficeCalc017} facciamo doppio click su uno dei numeri dell'asse delle $x$, ad esempio il numero $-5$ e si apre la finestra di figura \ref{fig:LibreOfficeCalc018}
 
-\input{latexScriptsToIncude_images/picture_018.tex}
-
+%\input{latexScriptsToIncude_images/picture_018.tex}
+\pict{018}
 
 Leviamo la spunta su "automatic" su tutte e quattro le voci, cambiamo "Minimum" e "Maximum" in $-10$ e $+10$, cambiamo anche "Major interval" e "Minor interval count" in modo da impostare una griglia più vicina a quella di una carta millimetrata, come in figura \ref{fig:LibreOfficeCalc019}
 
 
-\input{latexScriptsToIncude_images/picture_019.tex}
-
+%\input{latexScriptsToIncude_images/picture_019.tex}
+\pict{019}
 
 E il risultato dovrebbe essere quello di figura \ref{fig:LibreOfficeCalc020}
 
-\input{latexScriptsToIncude_images/picture_020.tex}
+%\input{latexScriptsToIncude_images/picture_020.tex}
+\pict{020}
 
 Allo stesso modo, cliccando su un numero dell'asse delle $y$, ad esempio il numero $2$, si possono configurare i valori massimo e minimo di $y$, nonchè i valori della griglia
 
 \ref{fig:LibreOfficeCalc021}
 
 
-\input{latexScriptsToIncude_images/picture_021.tex}
+%\input{latexScriptsToIncude_images/picture_021.tex}
+\pict{021}
+
 
 \newpage
 \section{Cambiare il font dei numeri sugli assi}
 
 Nella figura \ref{fig:LibreOfficeCalc022} risulta che bisogna cliccare prima su font e poi scegliere il valore desiderato.
-\input{latexScriptsToIncude_images/picture_022.tex}
+%\input{latexScriptsToIncude_images/picture_022.tex}
+\pict{022}
+
 
 nella figura \ref{fig:LibreOfficeCalc023} il risultato, dopo aver impostato un font pari a 16 \emph{sia} per i numeri dell'asse delle $x$, sia per i numeri dell'asse delle $y$
 
-\input{latexScriptsToIncude_images/picture_023.tex}
-
+%\input{latexScriptsToIncude_images/picture_023.tex}
+\pict{023}
 
 \section{Inserire una griglia più fitta}
 
-\input{latexScriptsToIncude_images/picture_024.tex}
+%\input{latexScriptsToIncude_images/picture_024.tex}
+\pict{024}
 
-\input{latexScriptsToIncude_images/picture_025.tex}
 
-\input{latexScriptsToIncude_images/picture_026.tex}
+%\input{latexScriptsToIncude_images/picture_025.tex}
+\pict{025}
+
+
+%\input{latexScriptsToIncude_images/picture_026.tex}
+\pict{026}
+
+
+%\input{latexScriptsToIncude_images/picture_027.tex}
+\pict{027}
+
+
+
+
+
 
 \newpage
-\subsection{Infittire la griglia verticale}
+~\newpage
 
-\input{latexScriptsToIncude_images/picture_027.tex}
+\section{Infittire la griglia verticale}
 
-\input{latexScriptsToIncude_images/picture_028.tex}
 
-\newpage
-\subsection{Infittire la griglia orizzontale}
 
-\input{latexScriptsToIncude_images/picture_029.tex}
+%\input{latexScriptsToIncude_images/picture_028.tex}
+\pict{028}
 
-\input{latexScriptsToIncude_images/picture_030.tex}
+\section{Infittire la griglia orizzontale}
+
+%\input{latexScriptsToIncude_images/picture_029.tex}
+\pict{029}
+
+
+%\input{latexScriptsToIncude_images/picture_030.tex}
+\pict{030}
+
 \end{document}
