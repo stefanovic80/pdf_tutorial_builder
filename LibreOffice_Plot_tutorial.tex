@@ -2,6 +2,9 @@
 %\documentclass[12pt]{report}
 %\documentclass[12pt]{extreport}
 \documentclass[17pt]{extarticle}
+
+\AddToHook{cmd/section/before}{\clearpage} % a new page for each new section!!!
+
 %\documentclass{memoir}
 
 \usepackage{graphicx}
@@ -99,7 +102,7 @@ Abbiamo anche visto, adoperando la carta millimetrata, che le infinite coppie or
 
 Sempre adoperando la carta millimetrata, abbiamo visto che mettendo a sistema due differenti equazioni lineari, la coppia ordinata risultato del sistema è, graficamente, il punto di intersezione delle rispettive rette. In questa sede andiamo a rivedere tutto questo facendo uso del \emph{foglio di calcolo elettronico} e, in particolare, di LibreOffice Calc.
 
-\newpage
+
 
 \section{Rappresentazione grafica di una retta su piano cartesiano con \emph{foglio di calcolo elettronico} }
 
@@ -135,11 +138,6 @@ Per fare ciò, conviene che per ciascuna delle due equazioni del sistema \ref{eq
 
 Passiamo ora a LibreOffice Calc (fig. \ref{fig:LibreOfficeCalc003})
 %\input{latexScriptsToIncude_images/picture_003.tex}
-
-
-
-\newpage
-
 
 
 \section{Scrittura nelle caselle di testo, numeri e formule matematiche}
@@ -199,12 +197,6 @@ Il risultato che dovrebbe apparire è riportato nella figura \ref{fig:LibreOffic
 \pict{007}
 
 
-\newpage
-\mbox{}
-\newpage
-\mbox{}
-\newpage
-
 \section{Copiatura delle formule matematiche su più caselle della medesima colonna}
 
 Scriviamo ora l'espressione algebrica "$=a2 + 0,01$" nella casella A3
@@ -235,12 +227,6 @@ e ripetiamo il passaggio precedente, copiando le rispettive formule matematiche,
 
 In questo modo LibreOffice Calc ha eseguito ben 200 calcoli, e con estrema rapidità.
 
-\newpage
-\mbox{}
-\newpage
-
-\mbox{}
-\newpage
 
 \section{Eseguire il grafico}
 
@@ -278,9 +264,9 @@ Il punto di intersezione delle due rette dovrebbe avere, appunto, come coordinat
 
 Andiamo a vedere come si possono impostare i parametri del grafico, in modo da accertarci che il punto di intersezione sia effettivamente quello cercato.
 
-\newpage
-%\mbox{}
-%\newpage
+
+
+
 \section{Impostazione dei parametri del grafico}
 
 In primo luogo notiamo che i valori delle $x$ vanno da $-15$ a $+15$, mentre a noi basta che vadano da $-10$ a $+10$. Nella figura \ref{fig:LibreOfficeCalc017} facciamo doppio click su uno dei numeri dell'asse delle $x$, ad esempio il numero $-5$ e si apre la finestra di figura \ref{fig:LibreOfficeCalc018}
@@ -308,9 +294,8 @@ Allo stesso modo, cliccando su un numero dell'asse delle $y$, ad esempio il nume
 \pict{021}
 
 
-\newpage
-\mbox{}
-\newpage
+
+
 
 \section{Cambiare il font dei numeri sugli assi}
 
@@ -325,9 +310,6 @@ nella figura \ref{fig:LibreOfficeCalc023} il risultato, dopo aver impostato un f
 \pict{023}
 
 
-%\newpage
-%\mbox{}
-\newpage
 
 \section{Inserire una griglia più fitta}
 
@@ -351,9 +333,9 @@ nella figura \ref{fig:LibreOfficeCalc023} il risultato, dopo aver impostato un f
 
 
 
-\newpage
-\mbox{}
-\newpage
+%\newpage
+%\mbox{}
+%\newpage
 
 \section{Infittire la griglia verticale}
 
